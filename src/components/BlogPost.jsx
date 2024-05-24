@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function BlogPost({ title, author, date, excerpt, image, post = true }) {
+function BlogPost({ title, author, date, excerpt, image }) {
 	return (
 		<article>
 			<h2>{title}</h2>
@@ -18,7 +18,6 @@ BlogPost.propTypes = {
 	date: PropTypes.string.isRequired,
 	excerpt: PropTypes.string,
 	image: PropTypes.string,
-	post: PropTypes.bool,
 };
 
 export default BlogPost;

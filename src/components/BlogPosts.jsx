@@ -5,9 +5,7 @@ function BlogPosts() {
 	return (
 		<section>
 			{posts.map((post) => (
-				<div key={post.title}>
-					<BlogPost {...post} />
-				</div>
+				<BlogPost {...post} key={post.title} />
 			))}
 		</section>
 	);
