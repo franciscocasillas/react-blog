@@ -2,13 +2,13 @@ import PropTypes from "prop-types";
 
 function BlogPost({ title, author, date, excerpt, image, post = true }) {
 	return (
-		<div>
+		<article>
 			<h2>{title}</h2>
 			<p>{author}</p>
 			<p>{date}</p>
 			{excerpt && <p>{excerpt}</p>}
 			{image && <img src={image} alt={title} />}
-		</div>
+		</article>
 	);
 }
 
